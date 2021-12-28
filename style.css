@@ -1,0 +1,10 @@
+body {
+    background-color: white;
+}
+
+#grey_box{
+    width: 100%;
+    height: 100%;
+    /* transform: skewY(50%); */
+    background-color: grey;
+}
