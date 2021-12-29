@@ -1,10 +1,16 @@
 body {
     background-color: white;
+    display: flex;
 }
 
-#grey_box{
-    width: 100%;
+.grey_box{
+    width: 50%;
     height: 100%;
+    position: absolute;
+    margin-right: 50%;
+    margin: 0px;
     /* transform: skewY(50%); */
     background-color: grey;
+
 }
+
