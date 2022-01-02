@@ -4,25 +4,34 @@
     /* position: absolute; */
     height: 50vh;
     width: 100vw;
-}
+  }
   .grey_box {
     background-color: #656565;
     clip-path: polygon(0% 40%, 100% 15%, 100% 100%, 0% 100%);
-}
+  }
+  .grey_box_container{
+    width: auto;
+  }
 
   #Intro_Box {
     padding: 0;
     height: 70vh;
     width: 100vw;
+    font-size: 2rem;
     align-self: end;
     text-align: unset;
     display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
     justify-content: space-evenly;
     align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
   }
+
+  #links{
+    align-self: center;
+    font-size: unset;
   }
+}
 
   /* min-aspect-ratio: 65/54 */
   /* max-width: 760px */
