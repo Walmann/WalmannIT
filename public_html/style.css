@@ -1,6 +1,8 @@
 body {
     background-color: #b8b8b8;
     display: flex;
+    overflow: hidden;
+    font-size: 16px;
 }
 
 .portrait{
@@ -11,14 +13,16 @@ body {
 
 }
 
-.grey_box{
+.grey_box {
     z-index: 1;
+    overflow: hidden;
     width: 100vw;
-    display: inherit;
+    display: flex;
     height: 100vh;
-    margin: -10px;
+    margin: -8px;
     background-color: #656565;
     clip-path: polygon(60% 0, 100% 0, 100% 100%, 0% 100%);
+    justify-content: flex-end;
 }
 
 .grey_box_container{
@@ -26,7 +30,7 @@ body {
     text-align: right;
     justify-content: right;
     height: 100%;
-    width: 100%;
+    width: 50%;
 }
 .text{
     font-weight: normal;
@@ -42,12 +46,14 @@ body {
 #Intro_Box {
     align-content: flex-end;
     /* align-self: center; */
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-family: "Mukta Vaani";
     display: inherit;
     flex-direction: column;
-    padding-right: 10rem;
+    width: 100%;
+    padding-right: 10vw;
     justify-content: space-evenly;
+    white-space: nowrap;
 }
 
 #Name_And_Quote{
@@ -63,7 +69,7 @@ body {
     display: inherit;
     flex-direction: row;
     align-self: end;
-    font-size: 3.5rem;
+    font-size: 2rem;
 }
 #links a {
     margin-left: 1.5rem;
