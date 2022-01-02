@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Mukta Vaani' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://css.gg/arrow-left-o.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <script>
@@ -17,13 +18,18 @@
             var element = document.getElementById('grey_area_container');
             element.classList.add('animate__animated', 'animate__slideOutDown')
             element.addEventListener('animationend', () => {
-                console.log(page_to_get)
+                // console.log(page_to_get)
                 if (page_to_get == 'Intro'){
-                    page_to_load = get_page('Intro_box.html');
+                    page_to_load = get_page('/Intro_box.html');
                 }
                 if (page_to_get == "Email"){
-                    page_to_load = get_page('email_box.html');
+                    page_to_load = get_page('/email_box.html');
+                                document.getElementById('grey_area_container').innerHTML = page_to_load
+
                 }
+                document.getElementById('grey_area_container').innerHTML = page_to_load
+                element.classList.remove('animate__slideOutDown')
+                element.classList.add('animate__slideInRight')
             });
         }
         if (first_load == true){
@@ -36,6 +42,7 @@
     }
     function get_page(href){
         var xmlhttp = new XMLHttpRequest();
+                console.log(href)
                 xmlhttp.open("GET", href, false);
                 xmlhttp.send();
                 return xmlhttp.responseText;
