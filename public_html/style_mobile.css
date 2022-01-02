@@ -1,0 +1,28 @@
+@media only screen and (max-aspect-ratio: 65/54) {
+  .portrait {
+    /* z-index: 0; */
+    /* position: absolute; */
+    height: 50vh;
+    width: 100vw;
+}
+  .grey_box {
+    background-color: #656565;
+    clip-path: polygon(0% 40%, 100% 15%, 100% 100%, 0% 100%);
+}
+
+  #Intro_Box {
+    padding: 0;
+    height: 70vh;
+    width: 100vw;
+    align-self: end;
+    text-align: unset;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  }
+
+  /* min-aspect-ratio: 65/54 */
+  /* max-width: 760px */

@@ -6,12 +6,22 @@ body {
 }
 
 .portrait{
+    background-image: url("./images/Julegenser.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vh;
+
     z-index: 0;
     position: fixed;
     height: 100vh;
     margin: -10px;
+    width: 100vw;
 
 }
+
+/* .portrait img {
+    height: 100%;
+} */
+
 
 .grey_box {
     z-index: 1;
