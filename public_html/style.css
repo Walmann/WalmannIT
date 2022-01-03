@@ -72,14 +72,19 @@ body {
 
 #Name{
     text-decoration: underline;
-    font-family: "Open Sans"
+    font-family: "Open Sans";
+    font-size: 1em;
+}
+
+#Quote{
+    font-size: 0.8em;
 }
 
 #links{
     display: inherit;
     flex-direction: row;
     align-self: end;
-    font-size: 2rem;
+    /* font-size: 2rem; */
 }
 #links a {
     margin-left: 1.5rem;
