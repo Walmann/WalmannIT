@@ -1,9 +1,9 @@
 @media only screen and (max-aspect-ratio: 65/54) {
   .portrait {
-    /* z-index: 0; */
-    /* position: absolute; */
-    height: 50vh;
-    width: 100vw;
+    z-index: 0;
+    position: absolute;
+    /* height: 50vh; */
+    /* width: 100%; */
   }
   .grey_box {
     background-color: #656565;
