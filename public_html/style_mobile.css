@@ -14,7 +14,9 @@
   }
 
   #Intro_Box {
-    padding: 0;
+    /* padding: 0em; */
+    margin-right: 0em;
+    margin-bottom: 2em;
     height: 70vh;
     width: 100vw;
     font-size: 2rem;
@@ -22,14 +24,14 @@
     text-align: unset;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    /* align-items: center; */
     align-content: space-around;
     flex-wrap: nowrap;
-  }
+}
 
   #links{
-    align-self: center;
-    font-size: unset;
+    /* align-self: center; */
+    font-size: 0.8em
   }
 }
 
