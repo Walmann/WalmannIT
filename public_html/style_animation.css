@@ -1,6 +1,14 @@
 .slide-right {
-	-webkit-animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s reverse both;
-	        animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s reverse both;
+  /* -webkit-animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s reverse both; */
+  /* animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s reverse both; */
+  animation-timing-function: ease-in;
+  animation-delay: 100ms;
+  animation-direction: reverse;
+  animation-fill-mode: both;
+  animation-play-state: running;
+  animation-name: slide-right;
+  animation-iteration-count: 1;
+  animation-duration: 1.5s;
 }
 
 /* ----------------------------------------------
@@ -21,8 +29,8 @@
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(100vw);
-            transform: translateX(100vw);
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
   }
 }
 @keyframes slide-right {
@@ -31,7 +39,61 @@
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(100vw);
-            transform: translateX(100vw);
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+}
+
+.slide-up {
+  /* -webkit-animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s reverse both; */
+  /* animation: slide-right 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s reverse both; */
+  animation-name: slide-up;
+  animation-timing-function: ease-in;
+  animation-delay: 1.5s;
+  animation-direction: reverse;
+  animation-fill-mode: both;
+  animation-play-state: running;
+  animation-iteration-count: 1;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+}
+@keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+}
+
+.close-to-open{
+  animation-name: close-to-open;
+  animation-timing-function: ease-in;
+  animation-delay: 1.5s;
+  animation-direction: normal;
+  animation-fill-mode: both;
+  animation-play-state: running;
+  animation-iteration-count: 1;
+  animation-duration: 1.5s;
+}
+@keyframes close-to-open {
+  0% {
+    /* -webkit-transform: translateY(0); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+  100% {
+    clip-path: polygon(80vh 0, 100% 0, 100% 100%, 0 100%, 0 80vh);
   }
 }
