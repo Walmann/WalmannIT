@@ -60,7 +60,7 @@ body {
 #Intro_Box {
     align-content: flex-end;
     /* align-self: center; */
-    font-size: 1.5rem;
+    font-size: calc(1.5rem + 1vw); /* 1.5rem */
     font-family: "Mukta Vaani";
     display: inherit;
     flex-direction: column;
