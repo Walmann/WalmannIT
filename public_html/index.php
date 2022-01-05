@@ -47,21 +47,22 @@
     }
     function get_page(href){
         var xmlhttp = new XMLHttpRequest();
-                console.log(href)
+                // console.log(href)
                 xmlhttp.open("GET", href, false);
                 xmlhttp.send();
                 return xmlhttp.responseText;
     }
     // document.getElementById('grey_area_container').innerHTML = load_page('Intro_Box.html');"
 </script>
-<body onload="load_page('Intro')">
+<!-- onload="load_page('Intro')"> -->
+<body>
    <!-- SlideInCustom animate__animated animate__fadeInRightBig -->
     <div class="portrait">
         <!-- <img src="./images/Julegenser.jpg" alt=""> -->
     </div>
     <div id="grey_area" class="close-to-open grey_box">     <!--  animate__animated animate__slideInRight  -->
         <div id="grey_area_container" class="grey_box_container">
-
+            <?php include("./Intro_box.html"); ?>
             
         </div>
         

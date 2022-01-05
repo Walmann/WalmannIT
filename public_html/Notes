@@ -1,6 +1,5 @@
 Hovedside: 
-
-Ferdig.
+Trenger kanskje å bytte ut ajax med iFrame?
 
 Trenger kanskje å legge til ultrawide support?
     Tror dette fungerer. La til Calc i font-size CSS.
