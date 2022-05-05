@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/walmaxdg/public_html_test/
+    - export DEPLOYPATH=/home/walmaxdg/public_html/
     - /bin/cp -R public_html $DEPLOYPATH
